@@ -2,8 +2,9 @@
 from setuptools import setup, find_packages
 
 install_requires = [
-    'sentry>=6.0.0',
-    'BeautifulSoup>=3.2.1'
+    'sentry>=7.0.0',
+    'BeautifulSoup>=3.2.1',
+    'dicttoxml==1.6.6',
 ]
 
 f = open('README.rst')
@@ -11,22 +12,22 @@ readme = f.read()
 f.close()
 
 setup(
-    name='sentry-jira',
-    version='0.10.0',
-    author='Adam Thurlow',
-    author_email='thurloat@gmail.com',
-    url='http://github.com/thurloat/sentry-jira',
-    description='A Sentry extension which creates JIRA issues from sentry events.',
+    name='sentry-unfuddle',
+    version='0.11.0',
+    author='Rick Keilty',
+    author_email='rkeilty@gmail.com',
+    url='http://github.com/rkeilty/sentry-unfuddle',
+    description='A Sentry extension which creates Unfuddle issues from sentry events.',
     long_description=readme,
     license='BSD',
     packages=find_packages(),
     install_requires=install_requires,
     entry_points={
         'sentry.apps': [
-            'sentry_jira = sentry_jira',
+            'sentry_unfuddle = sentry_unfuddle',
             ],
         'sentry.plugins': [
-            'sentry_jira = sentry_jira.plugin:JIRAPlugin'
+            'sentry_unfuddle = sentry_unfuddle.plugin:UnfuddlePlugin'
         ],
     },
     include_package_data=True,

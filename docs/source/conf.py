@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# sentry-jira documentation build configuration file, created by
+# sentry-unfuddle documentation build configuration file, created by
 # sphinx-quickstart on Mon Sep 10 15:06:37 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,15 +40,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'sentry-jira'
-copyright = u'2012, Adam Thurlow (thurloat)'
+project = u'sentry-unfuddle'
+copyright = u'2015, Rick Keilty (rkeilty)'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = __import__('pkg_resources').get_distribution('sentry-jira').version
+version = __import__('pkg_resources').get_distribution('sentry-unfuddle').version
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'sentry-jiradoc'
+htmlhelp_basename = 'sentry-unfuddledoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,8 +183,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'sentry-jira.tex', u'sentry-jira Documentation',
-   u'Adam Thurlow (thurloat)', 'manual'),
+  ('index', 'sentry-unfuddle.tex', u'sentry-unfuddle Documentation',
+   u'Rick Keilty (rkeilty)', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -213,8 +213,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'sentry-jira', u'sentry-jira Documentation',
-     [u'Adam Thurlow (thurloat)'], 1)
+    ('index', 'sentry-unfuddle', u'sentry-unfuddle Documentation',
+     [u'Rick Keilty (rkeilty)'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'sentry-jira', u'sentry-jira Documentation',
-   u'Adam Thurlow (thurloat)', 'sentry-jira', 'One line description of project.',
+  ('index', 'sentry-unfuddle', u'sentry-unfuddle Documentation',
+   u'Rick Keilty (rkeilty)', 'sentry-unfuddle', 'One line description of project.',
    'Miscellaneous'),
 ]
 

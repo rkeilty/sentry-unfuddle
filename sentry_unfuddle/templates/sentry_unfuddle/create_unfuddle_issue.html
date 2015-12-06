@@ -1,7 +1,7 @@
 {% extends "sentry/plugins/bases/issue/create_issue.html" %}
 
 {% block main %}
-    <div id="jira_issue_form">
+    <div id="unfuddle_issue_form">
         {{ block.super }}
     </div>
 {% endblock %}
@@ -11,10 +11,10 @@
     <script type="text/javascript">
         $(document).ready(function(){
             // bind regular selects and multiselects to use select2
-            $("#jira_issue_form select").select2({"width": "460px"});
+            $("#unfuddle_issue_form select").select2({"width": "460px"});
 
             // user autocompletion!
-            $("#jira_issue_form input.user-selector").each(function(i, el){
+            $("#unfuddle_issue_form input.user-selector").each(function(i, el){
                 var $el = $(el);
                 $el.select2({
                     placeholder: "Select a User",
@@ -47,11 +47,11 @@
             });
 
             // refresh the page with updated form based on issue type.
-            $("#jira_issue_form form").append('<input type="hidden" name="changing_issuetype" value="0" />');
-            $("#id_issuetype").on("change", function(){
-                $("#changing_issuetype").val("1");
-                $("#jira_issue_form").submit();
-            });
+//            $("#unfuddle_issue_form form").append('<input type="hidden" name="changing_issuetype" value="0" />');
+//            $("#id_issuetype").on("change", function(){
+//                $("#changing_issuetype").val("1");
+//                $("#unfuddle_issue_form").submit();
+//            });
         });
     </script>
 {% endblock %}

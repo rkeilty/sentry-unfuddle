@@ -1,6 +1,6 @@
 {% load i18n crispy_forms_filters %}
 
-<form class="form" action="" method="post" id="jira_issue_form">
+<form class="form" action="" method="post" id="unfuddle_issue_form">
     {% csrf_token %}
     <input type="hidden" name="plugin" value="{{ plugin.slug }}" />
 
@@ -12,6 +12,6 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#id_jira-default_project").select2({"width": "220px"});
+        $("#id_unfuddle-default_project_id").select2({"width": "250px"});
     });
 </script>
