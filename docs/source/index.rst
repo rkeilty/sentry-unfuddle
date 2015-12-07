@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to sentry-unfuddle's documentation
-======================================
+==========================================
 
 
 Configuration Overview
@@ -35,10 +35,16 @@ that is installed alongside the plugin, so I'm keeping track of changes for
 versions of the plugins (along with which version of sentry they actually
 support).
 
-0.11.0
+1.0.0
 #####
 
- - Finalized port of sentry-jira to sentry
+ - Updated documentation
+ - Made version 1.0.0, as this has been running successfully in several production environments.
+
+0.11.0
+######
+
+ - Initial port of [sentry-jira](https://github.com/getsentry/sentry-jira) to [sentry-unfuddle](https://github.com/rkeilty/sentry-unfuddle)
 
 .. toctree::
    :maxdepth: 2
@@ -51,4 +57,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

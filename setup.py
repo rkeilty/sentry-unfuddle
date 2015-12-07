@@ -13,7 +13,7 @@ f.close()
 
 setup(
     name='sentry-unfuddle',
-    version='0.11.0',
+    version='1.0.0',
     author='Rick Keilty',
     author_email='rkeilty@gmail.com',
     url='http://github.com/rkeilty/sentry-unfuddle',
