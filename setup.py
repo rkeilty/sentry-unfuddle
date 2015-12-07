@@ -7,7 +7,7 @@ install_requires = [
     'dicttoxml==1.6.6',
 ]
 
-f = open('README.rst')
+f = open('README.md')
 readme = f.read()
 f.close()
 
