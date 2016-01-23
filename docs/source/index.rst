@@ -35,6 +35,13 @@ that is installed alongside the plugin, so I'm keeping track of changes for
 versions of the plugins (along with which version of sentry they actually
 support).
 
+
+1.0.1
+#####
+
+-  Updated documentation
+-  Confirmed working with Sentry 8.0.x
+
 1.0.0
 #####
 

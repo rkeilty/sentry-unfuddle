@@ -4,16 +4,16 @@ from setuptools import setup, find_packages
 install_requires = [
     'sentry>=7.0.0',
     'BeautifulSoup>=3.2.1',
-    'dicttoxml==1.6.6',
+    'dicttoxml>=1.6.6',
 ]
 
-f = open('README.md')
+f = open('README.rst')
 readme = f.read()
 f.close()
 
 setup(
     name='sentry-unfuddle',
-    version='1.0.0',
+    version='1.0.1',
     author='Rick Keilty',
     author_email='rkeilty@gmail.com',
     url='http://github.com/rkeilty/sentry-unfuddle',
